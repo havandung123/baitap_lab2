@@ -1,0 +1,32 @@
+package lab31;
+
+public class bai7 {
+    private String brand;
+    private String model;
+    private int speed;
+
+    public bai7(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+        this.speed = 0;
+    }
+
+    public void accelerate(int value) {
+        speed += value;
+    }
+
+    public void brake(int value) {
+        speed -= value;
+        if (speed < 0) {
+            speed = 0;
+        }
+    }
+
+    public boolean isOverSpeed() {
+        return speed > 100;
+    }
+
+    public void displayStatus() {
+        System.out.println("Model: " + model + " – Speed: " + speed);
+    }
+}
