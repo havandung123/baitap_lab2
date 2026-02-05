@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package LAB32;
+package lab32;
 
-/**
- *
- * @author GSADS
- */
+import java.util.Scanner;
+
 public class bai1 {
-    
+    private String id;
+    private String name;
+    private double score;
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap ID: ");
+        id = sc.nextLine();
+        System.out.print("Nhap ten: ");
+        name = sc.nextLine();
+        System.out.print("Nhap diem: ");
+        score = sc.nextDouble();
+    }
+
+    public void display() {
+        System.out.println("ID: " + id + " - Name: " + name + " - Score: " + score);
+    }
+
+    public boolean isPass() {
+        return score >= 5;
+    }
 }

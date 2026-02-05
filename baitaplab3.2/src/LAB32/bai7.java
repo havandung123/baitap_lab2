@@ -1,13 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package LAB32;
+package lab32;
 
-/**
- *
- * @author GSADS
- */
 public class bai7 {
-    
+    private String brand;
+    private String model;
+    private int speed;
+
+    public bai7(String brand, String model, int speed) {
+        this.brand = brand;
+        this.model = model;
+        this.speed = speed;
+    }
+
+    public void accelerate(int value) {
+        speed += value;
+    }
+
+    public void brake(int value) {
+        speed -= value;
+        if (speed < 0) speed = 0;
+    }
+
+    public void displayStatus() {
+        System.out.println("Model: " + model + " - Speed: " + speed);
+    }
+
+    public boolean isOverSpeed() {
+        return speed > 100;
+    }
 }

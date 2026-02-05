@@ -1,13 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package LAB32;
+package lab32;
 
-/**
- *
- * @author GSADS
- */
 public class bai5 {
-    
+    private String accountNumber;
+    private String ownerName;
+    private double balance;
+
+    public bai5(String acc, String owner, double bal) {
+        accountNumber = acc;
+        ownerName = owner;
+        balance = bal;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= balance)
+            balance -= amount;
+        else
+            System.out.println("Khong du tien!");
+    }
+
+    public double checkBalance() {
+        return balance;
+    }
+
+    public void display() {
+        System.out.println("STK: " + accountNumber +
+                " - Chu TK: " + ownerName +
+                " - So du: " + balance);
+    }
 }
