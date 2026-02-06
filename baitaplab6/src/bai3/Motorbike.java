@@ -2,17 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package bai10;
+package bai3;
 
 /**
  *
  * @author GSADS
  */
-public class Main {
-    public static void main(String[] args) {
-        Employee e = new FullTimeEmployee("Dũng");
-        System.out.println("Tên: " + e.name);
-        System.out.println("Lương: " + e.salary());
+
+
+public class Motorbike extends Vehicle {
+    public Motorbike(String brand) {
+        super(brand);
+    }
+
+    @Override
+    public int getMaxSpeed() {
+        return 120;
     }
 }
-

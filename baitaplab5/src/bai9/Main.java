@@ -9,11 +9,11 @@ package bai9;
  * @author GSADS
  */
 
-
 public class Main {
     public static void main(String[] args) {
         Shape s = new Circle(3);
         System.out.println("Diện tích: " + s.area());
     }
 }
+
 

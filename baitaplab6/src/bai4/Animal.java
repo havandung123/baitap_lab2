@@ -2,23 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package bai9;
+package bai4;
 
 /**
  *
  * @author GSADS
  */
-
-public class Circle extends Shape {
-    double r;
-
-    public Circle(double r) {
-        this.r = r;
-    }
-
-    @Override
-    public double area() {
-        return Math.PI * r * r;
-    }
+public class Animal {
+    
 }
-

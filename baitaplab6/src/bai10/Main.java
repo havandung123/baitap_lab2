@@ -9,10 +9,5 @@ package bai10;
  * @author GSADS
  */
 public class Main {
-    public static void main(String[] args) {
-        Employee e = new FullTimeEmployee("Dũng");
-        System.out.println("Tên: " + e.name);
-        System.out.println("Lương: " + e.salary());
-    }
+    
 }
-
