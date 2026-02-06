@@ -8,25 +8,28 @@ package lab4;
  *
  * @author GSADS
  */
-class ClassRoom {
+
+class Teacher {
     private String name;
     private String specialization;
 
-    ClassRoom(String n, String s) {
+    Teacher(String n, String s) {
         name = n;
         specialization = s;
     }
 
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 }
 
 public class ClassRoom {
     private String className;
-    private ClassRoom teacher;
+    private Teacher teacher;
 
     ClassRoom() {}
 
-    ClassRoom(String c, ClassRoom t) {
+    ClassRoom(String c, Teacher t) {
         className = c;
         teacher = t;
     }
@@ -36,9 +39,8 @@ public class ClassRoom {
     }
 
     public static void main(String[] args) {
-        ClassRoom t = new ClassRoom("Dung", "Java");
+        Teacher t = new Teacher("Dung", "Java");
         ClassRoom c = new ClassRoom("OOP", t);
         c.display();
     }
 }
-
